@@ -1,0 +1,1612 @@
+<!-- ***************************************
+    **************************************
+    ***********************
+ I have added one Playlist for ALAN walker(present on second number on POPULAR ARTIST CORNER)
+And kindly save another html page of this Alan Walker playlist given at bottom of this code 
+    ***********************
+    **************************************
+    ****************************************
+-->
+
+
+<!--Save it with majorproject.html-->
+
+<!DOCTYPE html>
+<head>
+   <title> music gallery</title>
+   <link rel="stylesheet"
+   href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"
+  >
+   <style>
+       body{
+        background-color: rgb(25, 11, 49);
+    }
+     
+       #container{
+           display: inline-block;
+           position:absolute;
+           
+       }
+     #logo_first{
+        display: inline-block;
+           position:absolute;
+          color: aliceblue;
+         left: 3.4rem;
+     }
+     #logo_second{
+        display: inline-block;
+           position:absolute;
+           top:1.5rem;
+           left:3.4rem;
+           color: aliceblue;
+     }
+     #fav{
+         display: inline-block;
+         position: absolute;
+         left:17rem;
+         top:1rem;
+         color: aliceblue;
+        }
+        #search{
+            display: inline-block;
+         position: absolute;
+         left:58rem;
+         color: aliceblue;
+        }
+        input {
+            line-height:17x;
+        }
+       divv{
+        border:2px solid grey;
+    height:1rem;   
+    }
+    #microphone{
+        margin-left:-11px;
+    }
+    #bell{
+        display: inline-block;
+         position: absolute;
+         left:74rem;
+         color: aliceblue;
+    }
+    #photo{
+        display: inline-block;
+         position: absolute;
+         left:76rem;
+         top:-1px;
+        
+    }
+    #phot{
+        border-radius:50%;
+    }
+    #container-albums-cover{
+        display: inline-block;
+        position: relative;
+        top:-15rem;
+        left:2rem;
+       
+    }
+    #alan{
+        display: inline-block;
+        transition: all 1s;
+        
+    }
+    #alan:hover{
+        transform: scale(1.2);
+    }
+    #concert{
+        display: inline-block;
+        transition: all 1s;
+    }
+    #concert:hover{
+        transform: scale(1.2);
+    }
+    #hall{
+        display: inline-block;
+        transition: all 1s;
+    }
+    #hall:hover{
+        transform: scale(1.2);
+    }
+    #latestrelease{
+        margin-top: -8rem;
+    }
+    #textlatestrelease{
+        margin-top: -7rem;
+        position: relative;
+    top: -7rem;
+    color: aliceblue;
+    }
+    #newrealease{
+        display: inline-block;
+        position: relative;
+        top:-20px;
+        left:3px;
+color: aliceblue;
+    }
+    #newrealease2{
+        display: inline-block;
+        position: relative;
+        top:-6px;
+        left:-46px;
+        font-size: small;
+        color: aliceblue;
+
+    }
+    #outer1{
+        display:inline-block;
+        border:1px solid grey;
+        width:18rem;
+    }
+    #outer2{
+display: inline-block;
+border:1px solid grey;
+width:18rem;
+    }
+    #outer3{
+        display:inline-block;
+        border:1px solid grey;
+width:18rem;
+    }
+    #outer4{
+        display:inline-block;
+        border:1px solid grey;
+width:18rem;
+
+    }
+    .f-ellipse{
+        display:inline-block;
+        position:relative;
+        top:-8px;
+        left:6rem;
+        color: aliceblue;
+    }
+    dots{
+        transition: all 1s;
+        color: aliceblue;
+    }
+    dots:hover{
+       box-shadow: 0px 0px 12px 2px grey;
+       border-radius: 50%;
+    }
+    .hiddenpoints{
+        overflow: hidden;
+       height:0px;
+       width:0px;
+       position:absolute;
+       top:0px;
+       left:0px;
+    
+    }
+    .hiddenpoints:target{
+        overflow: visible;
+        height: 90px;
+        width:70px;
+        border:1px solid grey;
+        background-color: aqua;
+  top:390px;
+  left:190px;
+  
+    }
+    
+    .hiddenpoints2{
+        overflow: hidden;
+       height:0px;
+       width:0px;
+       position:absolute;
+       top:0px;
+       left:0px;
+    
+    }
+    .hiddenpoints2:target{
+        overflow: visible;
+        height: 100px;
+        width:70px;
+        border:1px solid grey;
+        background-color: aqua;
+  top:400px;
+  left:480px;
+  
+    }
+  
+    .hiddenpoints3{
+        overflow: hidden;
+       height:0px;
+       width:0px;
+       position:absolute;
+       top:0px;
+       left:0px;
+    
+    }
+    .hiddenpoints3:target{
+        overflow: visible;
+        height: 90px;
+        width:70px;
+        border:1px solid grey;
+        background-color: aqua;
+  top:450px;
+  left:190px;
+  
+    }
+    
+    .hiddenpoints4{
+        overflow: hidden;
+       height:0px;
+       width:0px;
+       position: absolute;
+       top:0px;
+       left:0px;
+    
+    }
+    .hiddenpoints4:target{
+        overflow: visible;
+        height: 90px;
+        width:70px;
+        border:1px solid grey;
+        background-color: aqua;
+       
+  top:470px;
+  left:500px;
+  
+    }
+    #popularartist_container{
+        display:inline-block;
+      
+    }
+    .popular_artist_images{
+        display: inline-block;
+    }
+    .popular_artist_imageborderr{
+        border-radius: 50%;
+    }
+    .name_of_popular_artist{
+       color: aliceblue;
+    }
+    
+
+  #widthhwise{
+      height:110px;
+      width:40%;
+      border-left: 4px solid grey;
+      background-image: linear-gradient(to right,blue, rgb(25, 11, 49));
+  }
+  #stations{
+      position: relative;
+      top:9px;
+      left:6px;
+      display: inline;
+  }
+  .music_station_image{
+      opacity:0.5;
+      border-radius: 50%;
+      
+  }
+  .text_image_music_station{
+      position: relative;
+      left:3.3rem;
+      top:-3rem;
+color: aliceblue;
+  }
+  #loveimage{
+    display: inline;
+    position: relative;
+      top:9px;
+      left:39px;
+    
+  }
+  
+  #text_love{
+      position: relative;
+      left:10.5rem;
+      top:-3rem;
+color: aliceblue;
+  }
+  #radioimage{
+    display: inline;
+    position:relative;
+    top:-5.8rem;
+    left:15rem;
+    
+  }
+  
+  
+  
+  #chillimage{
+    display: inline;
+    position:relative;
+    top:-12.2rem;
+    left:21rem;
+    
+  }
+ 
+ 
+  #workoutimage{
+    display: inline;
+    position:relative;
+    top:-18.5rem;
+    left:27rem;
+    
+  }
+ 
+  
+  #rockimage{
+    display: inline;
+    position:relative;
+    top:-24.9rem;
+    left:33rem;
+    
+  }
+  
+  
+
+  #popimage{
+    display: inline;
+    position:relative;
+    top:-31rem;
+    left:39rem;
+    
+  }
+ 
+  #text_pop{
+      position: relative;
+      left:3.9rem;
+      top:-3rem;
+      color:aliceblue
+
+  }
+  #next_of_musicstation{
+      margin-top: 9px;
+  }
+  .allof_next_of_musicstation{
+    display: inline;
+      position: absolute;
+      top:56rem;
+      font-size: 40px;
+      color: aliceblue;
+  }
+  #textparty{
+     
+      left:5rem;
+     
+  }
+  #textelectronics{
+    left:19rem;
+  }
+  #textroadtrip{
+    left:36rem;
+  }
+  .full_latestenglish{
+    display: inline-block;
+      margin-left:1rem;
+  }
+  .full_latesthindi{
+    display: inline-block;
+      margin-left:1rem;
+  }
+  .caption_latest_english{
+      color:aliceblue;
+  }
+  .caption_latest_hindi{
+      color:aliceblue;
+  }
+  
+  .bijlisong{
+     visibility: hidden;
+      position: absolute;
+      height: 6.3rem;
+      width:65rem;
+      top:0px;
+      left:0px;
+      
+  }
+  .bijlisong:target{
+   visibility: visible;
+     
+     top:86rem;
+      left:8px;
+      background-color: rgb(93, 140, 182);
+  
+  }
+  .alansong{
+     visibility: hidden;
+      position: absolute;
+      height: 6.3rem;
+      width:65rem;
+      top:0px;
+      left:0px;
+      
+  }
+  .alansong:target{
+   visibility: visible;
+     
+     top:86rem;
+      left:8px;
+      background-color: rgb(93, 140, 182);
+  
+  }
+  #closeit{
+      margin-top:-6.4rem;
+      margin-left: 63.3rem;
+      background-color: rgb(236, 235, 243);
+      height:1.7rem;
+      width:1.7rem;
+      
+  }
+  #lastaudio{
+    position: relative;
+    top:0rem;
+    left:7rem;
+  }
+  #audioo{
+      width:498px;
+      
+  }
+  /* For Queue*/
+  #queuecontainer{
+       height:30rem;
+       width:20rem;
+       background-color: rgb(36, 14, 77);
+       overflow: initial;
+       overflow-x: hidden;
+     
+       display: inline-block;
+       margin-top: 2rem;
+       margin-left: 4rem;
+   }
+    #quue{
+        display: inline-block;
+        position:absolute;
+        font-size: xx-large;
+        margin-top:-2rem;
+        top:6.3rem;
+        left:53rem;
+    color: aliceblue;
+    }
+    #imageallfirst{
+     margin-top:37px;
+     margin-left: 1rem;
+    }
+    #imageallsecond{
+     margin-top: -1.2rem;
+     margin-left: 1rem;
+    }
+    #imageallthird{
+     margin-top: -1rem;
+     margin-left: 1rem;
+    }
+    #imageallfourth{
+     margin-top: -1rem;
+     margin-left: 1rem;
+    }
+    #imageallfifth{
+     margin-top: 0rem;
+     margin-left: 1rem;
+    }
+    #imageallsixth{
+     margin-top: -0.2rem;
+     margin-left: 1rem;
+    }
+    #imageallseventh{
+     margin-top: -0.2rem;
+     margin-left: 1rem;
+    }
+
+   
+    .firstnum{
+        position: relative;
+        top:-1rem;
+        color: aliceblue;
+    }
+    .firsttext{
+        position: relative;
+        top:-1.3rem;
+        color: aliceblue;
+    }
+    .hearticon{
+        position: relative;
+        top:-2rem;
+left:7rem;
+color: aliceblue;
+    }
+   /*close Queue*/
+  
+   @media only screen and (max-width: 1179px){
+        #alan{
+            margin-top: 15rem;
+        }
+        #queuecontainer{
+            margin-top: -13rem;
+    
+    margin-left: 5rem;
+        }
+        .allof_next_of_musicstation{
+            top:89rem;
+        }
+        #latestrelease{
+            margin-top:7rem;
+        }
+        #textlatestrelease{
+            top:9rem;
+        }
+    }
+  
+
+    </style>
+    <body>
+       <div id="container-logo">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSP68bJZhhkG_UvHtspJ3s5pAdqS6QAwOUgA&usqp=CAU"
+     height="40px" width="40px">
+     <div id="logo_first"> NINJA</div>
+     <div id="logo_second"> STUDIO</div>
+    <div id="fav"> Favourites </div>
+     <div id="search"><divv><i class="fas fa-search"></i></divv><input id="searchbutton" type="text" placeholder="Search" size="25"><i id="microphone" class="fas fa-microphone"></i></div> 
+     <div id="bell"><i class="fas fa-bell"></i></div> 
+     <div id="photo"><img id="phot" src="https://www.imagediamond.com/blog/wp-content/uploads/2020/06/cartoon-boy-images-1.jpg"
+        height="40px" width="40px"></div>  
+</div>
+<br>
+<div id="container-albums-cover">
+    <div id="alan"><img src="https://image.winudf.com/v2/image1/Y29tLnVzdWttdXNpY2hvdC5hbGFud2Fsa2VyLmJlc3RtdXNpY19zY3JlZW5fMF8xNTY2ODI3NjMxXzAwOA/screen-0.jpg?fakeurl=1&type=.jpg" height="260px" width="250px">
+    </div>
+ <div id="concert"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBDBoRO-1ULevCe5OwaQudeHoM19vFmSFMw&usqp=CAU" height="260px" width="250px">
+ </div>&nbsp;&nbsp;
+<div id="hall"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz8H3oho3Swofj8tkSsOBJmxK1MxEa3IkXqQ&usqp=CAU" height="260px" width="250px">
+</div>
+
+</div>
+
+<!-- QUEUE 
+******
+**********-->
+
+<div id="quue">Queue</div>
+<div id="queuecontainer">
+
+
+<div  id="imageallfirst">
+<span class="firstnum">01</span> &nbsp; <img src="https://images.unsplash.com/photo-1576025916944-438d601fc0bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+ height="40px" width="40px">
+ <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+ <span  class="hearticon"><spann id="heart"><i class="far fa-heart"></i></spann></span>
+</div>
+
+
+<br>
+
+
+<div  id="imageallsecond">
+    <span class="firstnum">02</span> &nbsp; <img src="https://images.unsplash.com/photo-1576025916944-438d601fc0bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+     height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong><br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+     <span class="hearticon"><i class="far fa-heart"></i></span>
+    </div>
+
+
+    <br>
+
+
+    <div  id="imageallthird">
+        <span class="firstnum">03</span> &nbsp; <img src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=917&q=80"
+         height="40px" width="40px">
+         <span class="firsttext"><strong>Mirage</strong><br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+         <span class="hearticon"><i class="far fa-heart"></i></span>
+        </div>
+
+
+<br>
+
+
+<div  id="imageallfourth">
+    <span class="firstnum">04</span> &nbsp; <img src="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+     height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+     <span class="hearticon"><i class="far fa-heart"></i></span>
+        </div>
+      
+<div  id="imageallfifth">
+ <span class="firstnum">05</span> &nbsp; <img src="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    height="40px" width="40px">
+  <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+    <span class="hearticon"><i class="far fa-heart"></i></span>
+       </div>
+
+
+
+<div  id="imageallsixth">
+    <span class="firstnum">06</span> &nbsp; <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
+       height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+       <span class="hearticon"><i class="far fa-heart"></i></span>
+          </div>
+   
+
+
+   <div  id="imageallseventh">
+    <span class="firstnum">07</span> &nbsp; <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
+       height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+       <span class="hearticon"><i class="far fa-heart"></i></span>
+          </div>
+ 
+
+
+   <div  id="imageallseventh">
+    <span class="firstnum">08</span> &nbsp; <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
+       height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+       <span class="hearticon"><i class="far fa-heart"></i></span>
+          </div>
+ 
+
+   <div  id="imageallseventh">
+    <span class="firstnum">09</span> &nbsp; <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
+       height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+       <span class="hearticon"><i class="far fa-heart"></i></span>
+          </div>
+   
+</div>
+
+
+<br>
+<div id="textlatestrelease"><b>Latest Release</b></div>
+<br>
+<br>
+<div id="latestrelease">
+
+
+<div id="outer1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBx5MUp-CSm4NLf8UJ08hfIQsrWggGPj6_9A&usqp=CAU" height="40px" width="40px">
+<div id="newrealease">Onisum</div><div id="newrealease2"> Jan 2 , 2022</div>
+<div class="f-ellipse" id="cross"><a href="#open"><dots><i class="fa fa-ellipsis-h" aria-hidden="true"></i></dots></a>
+    <br><small>4.44</small> </div>
+
+</div>
+<span class="hiddenpoints" id="open"> <small>Play</small> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#cross">X</a><hr> <small>Favourite</small> <hr> <small> Queue  </small> </span>
+
+&nbsp;&nbsp;&nbsp;
+<div id="outer2">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBx5MUp-CSm4NLf8UJ08hfIQsrWggGPj6_9A&usqp=CAU" height="40px" width="40px">
+<div id="newrealease">Onisum</div><div id="newrealease2"> Jan 2 , 2022</div>
+<div class="f-ellipse" id="cross2"><a href="#open2"><dots><i class="fa fa-ellipsis-h" aria-hidden="true"></i></dots></a>
+    <br><small>4.44</small> </div>
+
+</div>
+<span class="hiddenpoints2" id="open2"> <small>Play</small> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#cross2">X</a><hr> <small>Favourite</small> <hr> <small>Queue </small><hr>   </span>
+
+<br>
+<br>
+<div id="outer3">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBx5MUp-CSm4NLf8UJ08hfIQsrWggGPj6_9A&usqp=CAU" height="40px" width="40px">
+<div id="newrealease">Onisum</div><div id="newrealease2"> Jan 2 , 2022</div>
+<div class="f-ellipse" id="cross3"><a href="#open3"><dots><i class="fa fa-ellipsis-h" aria-hidden="true"></i></dots></a>
+    <br><small>4.44</small> </div>
+
+
+</div>
+<span class="hiddenpoints3" id="open3"> <small>Play</small> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#cross2">X</a><hr> <small>Favourite</small> <hr><small> Queue </small>  </span>
+
+
+
+&nbsp;&nbsp;&nbsp;
+<div id="outer4">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBx5MUp-CSm4NLf8UJ08hfIQsrWggGPj6_9A&usqp=CAU" height="40px" width="40px">
+    <div id="newrealease">Onisum</div><div id="newrealease2"> Jan 2 , 2022</div>
+    <div class="f-ellipse" id="cross4"><a href="#open4"><dots><i class="fa fa-ellipsis-h" aria-hidden="true"></i></dots></a>
+        <br><small>4.44</small> </div>
+    
+        <div class="hiddenpoints4" id="open4"> <small>Play</small> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#cross4">X</a><hr> <small>Favourite</small> <hr><small> Queue </small>  </div>
+
+</div>
+
+</div>
+<br>
+
+
+
+<b style= "color:aliceblue;">Popular Artist</b>
+<br>
+<br>
+
+
+
+<div id="popularartist_container">
+
+
+ <div class="popular_artist_images">
+     <img
+     class="popular_artist_imageborderr" src=
+"https://upload.wikimedia.org/wikipedia/commons/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg"
+ height="90px" width="90px">
+
+ <div class="name_of_popular_artist"> Ed Sheeran</div>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="popular_artist_images"><a href="singleplaylistformajorproject.html">
+ <img 
+ class="popular_artist_imageborderr"
+ src="https://iphonewallpaperworld.com/wp-content/uploads/2021/03/Alan-Walker-Wallpapers-June-2021-1.jpg"
+ height="90px" width="90px"></a>
+
+ <div class="name_of_popular_artist">Alan Walker</div>
+</div>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="popular_artist_images">
+<img class="popular_artist_imageborderr" src="https://media.npr.org/assets/img/2016/03/29/zayn-mm-press-2-9d6ac443c97c99d3f4e781cef99a5d1b60257846-s1200-c85.webp"
+height="90px" width="90px" >
+<div class="name_of_popular_artist">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zayn</div>
+
+</div>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="popular_artist_images">
+<img class="popular_artist_imageborderr" src="https://wallpapercave.com/wp/wp1842514.jpg"
+height="90px" width="90px" >
+<div class="name_of_popular_artist">Charlie Puth</div>
+
+</div>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="popular_artist_images">
+<img class="popular_artist_imageborderr" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6DLSiVtEaOnU2BStV0sLfOnN4lZWZ4T73Yg&usqp=CAU"
+height="90px" width="90px">
+
+
+<div class="name_of_popular_artist">Imagine Dragon</div>
+
+</div>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="popular_artist_images">
+<img class="popular_artist_imageborderr" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_szf4TFDAbBWW84cl6p_0fc-VtmMHsBdYZw&usqp=CAU"
+height="90px" width="90px">
+
+
+<div class="name_of_popular_artist">Bruno mars</div>
+
+</div>
+
+</div>
+
+
+<br>
+<br>
+<br>
+
+<div id="widthhwise">
+    <div id="stations">
+<img id="musicstations" src="data:image/jpeg;base64,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"
+height="80px" width="80px">
+</div>
+
+
+&emsp;&emsp;&emsp;
+<div id="loveimage">
+    <img class="music_station_image" src="https://upload.wikimedia.org/wikipedia/commons/3/35/ParthenosSylviaButterfly.jpg"
+    height="80px" width="80px" ><div id="text_love">Love</div>
+</div>
+
+
+
+&emsp;&emsp;
+<div id="radioimage">
+    <img class="music_station_image" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Radio-Telephone.jpg"  height="80px" width="80px">
+    <div class="text_image_music_station">Retro</div>
+</div>
+
+
+&emsp;&emsp;
+<div id="chillimage">
+    <img class="music_station_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQuCSCQXg32kaIObmdcJhCtvsxVktz9879g&usqp=CAU"  height="80px" width="80px">
+    <div class="text_image_music_station">Chill</div>
+</div>
+
+
+
+&emsp;&emsp;
+<div id="workoutimage">
+    <img class="music_station_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM_HgzPPDMtApOqUI8vDOBy_mq6IrfKx5ALQ&usqp=CAU"  height="80px" width="80px">
+    <div class="text_image_music_station">Workout</div>
+</div>
+
+
+&emsp;&emsp;
+<div id="rockimage">
+    <img class="music_station_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeIz5YhnBj4D1V-ORJKNzeHTNJztU8y3nbJA&usqp=CAU"  height="80px" width="80px">
+    <div class="text_image_music_station">Rock</div>
+</div>
+
+&emsp;&emsp;
+<div id="popimage">
+    <img class="music_station_image" src="https://media.gettyimages.com/photos/black-male-guitarist-singing-and-playing-acoustic-guitar-on-stage-picture-id1137781483?s=2048x2048"  height="80px" width="80px">
+    <div id="text_pop">pop</div>
+</div>
+
+
+</div>
+
+
+<div id="next_of_musicstation">
+    
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP7tczZLTH6kZuQpj8xYFShTrOgQWoWYTZ5w&usqp=CAU"
+ width="210px" height="190px">
+ <div class="allof_next_of_musicstation" id="textparty">Party</div>
+
+
+ &emsp;
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaqJSKduvIX_r_z1xPl6Oyvb4Dzywt3gk1lQ&usqp=CAU">
+<div class="allof_next_of_musicstation" id="textelectronics">Electronics</div>
+
+&emsp;
+<img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=821&q=80"
+ height="200px" width="260px">
+<div class="allof_next_of_musicstation" id="textroadtrip">Road trip</div>
+
+
+</div>
+<br>
+<!--LATEST ENGLISH-->
+<b style= "color:aliceblue;">Latest English</b>
+<br>
+<br>
+<div id="latestenglish">
+
+
+    <div id="firstt" class="full_latestenglish"><a href="#alanfirst">
+<img src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1617759813/srch_universalmusic_00602438128075-NOQRJ2103010.jpg" height="90px" width="90px">
+</a><div class="caption_latest_english">Drivers License</div>
+
+</div>
+
+<div id="secondd" class="full_latestenglish"><a href="#alansecond">
+    <img src="https://www.lyricsgoal.com/wp-content/uploads/2021/12/itll-be-okay-shawn-mendes.jpg" height="90px" width="90px">
+</a> <div class="caption_latest_english">It'll be okay</div>
+    
+    </div>
+
+<div id="thirdd" class="full_latestenglish"><a href="#alanthird">
+        <img src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_believe/music/8030615139002/1637250617/srch_believe_A10320WT041376849L.jpg" height="90px" width="90px">
+    </a><div class="caption_latest_english">Bad Habits</div>
+        
+        </div>
+<div  id="fourthh" class="full_latestenglish"><a href="#alanfourth">
+            <img src="https://m.media-amazon.com/images/I/714+OFvXSBL._SS500_.jpg" height="90px" width="90px">
+        </a><div class="caption_latest_english">Belly Dancer</div>
+            
+            </div>
+<div id="fivthh" class="full_latestenglish"><a href="#alanfivth">
+                <img src="https://wallpapercave.com/wp/wp9581774.jpg" height="90px" width="90px">
+            </a><div class="caption_latest_english">Save your tears</div>
+                
+                </div>
+ <div id="sixthh" class="full_latestenglish"><a href="#alansixth">
+                    <img src="https://m.media-amazon.com/images/I/818l+XfsfCL._SL1500_.jpg" height="90px" width="90px">
+                    </a><div class="caption_latest_english">Let me love you</div>
+                    
+                    </div>
+ <div id="seventhh" class="full_latestenglish"><a href="#alanseventh">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBx5MUp-CSm4NLf8UJ08hfIQsrWggGPj6_9A&usqp=CAU" height="90px" width="90px">
+                    </a><div class="caption_latest_english">No lie</div>
+                        
+                        </div>
+ <div id="eightt"  class="full_latestenglish"><a href="#alaneight">
+                            <img src="https://paglasongs.com/uploads/thumb/sft9/4411_4.jpg" height="90px" width="90px">
+                        </a><div class="caption_latest_english">Love Nwatiti</div>
+                            
+                            </div>
+   <br>
+ <br>
+ <!--LATEST HINDI-->
+ <b style= "color:aliceblue;">Latest Hindi</b>
+ <br>
+ <br>
+        <div  id="first" class="full_latesthindi"><a href="#bijliifirst">
+ <img src="https://pagalsong.in/uploads//thumbnails/300x300/id3Picture_1508920579.jpg" height="90px" width="90px">
+</a><div class="caption_latest_hindi">Aankh marey</div>
+                                
+       </div>
+       <div id="second" class="full_latesthindi"><a href="#bijliisecond">
+        <img src="https://c.saavncdn.com/187/Chhalaang-Hindi-2020-20201113151006-500x500.jpg" height="90px" width="90px">
+    </a> <div class="caption_latest_hindi">Care ni karda</div>
+                                       
+              </div>
+       
+  <div id="third" class="full_latesthindi"><a href="#bijliithird">
+                <img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2020/10/burjkhalifa-1603005508.jpg" height="90px" width="90px">
+            </a>  <div class="caption_latest_hindi">Burj khalifa</div>
+                                               
+                      </div>
+  <div id="fourth" class="full_latesthindi"><a href="#bijliifourth">
+                        <img src="https://www.lyricsbell.com/wp-content/uploads/2019/01/machayenge-emiway.jpg" height="90px" width="90px">
+                    </a>  <div class="caption_latest_hindi">Machayenge</div>
+                                                       
+                              </div>
+
+
+  <div id="fifth" class="full_latesthindi"><a href="#bijliififth">
+                                <img src="https://resize.indiatv.in/resize/newbucket/715_-/2021/12/83-1638789153.jpg" height="90px" width="90px">
+                               
+                            </a>  <div class="caption_latest_hindi">Lehra do</div>
+                                                               
+                                      </div>
+
+ <div id="sixth" class="full_latesthindi"><a href="#bijliisixth">
+  <img src="https://cdn.statically.io/img/fancyodds.com/wp-content/uploads/2021/08/Mann-Bharryaa-2.0-New-Song.jpg"
+          height="90px" width="90px">
+      </a> <div class="caption_latest_hindi">Mann bharya</div>
+                                                                       
+        </div>                                     
+
+
+   <div id="bijlilastsecond" class="full_latesthindi"><a href="#bijliiseventh">
+       <img src="ratalambiyaposter.jpg" height="90px" width="90px">
+       </a>
+       <div class="caption_latest_hindi">Ratan Lambiya</div>
+                                                                               
+                                                      </div>
+ 
+ 
+ <div id="bijlilast" class="full_latesthindi"><a href="#bijliieight">
+  <img src="https://peoplesbiography.in/wp-content/uploads/2021/12/NwdQx2P_ytk-HD.jpg" height="90px" width="90px">
+</a>
+  <div class="caption_latest_hindi">Bijli  4:44</div>
+                                                                                       
+</div>                                              
+  </div>
+
+
+<!-- LATEST HINDI SONGS AUDIO
+****
+************** -->
+
+<div class="bijlisong"  id="bijliieight">
+    <img src="https://peoplesbiography.in/wp-content/uploads/2021/12/NwdQx2P_ytk-HD.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#bijlilast"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Bijlee Bijlee - Harrdy Sandhu.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="bijlisong"  id="bijliiseventh">
+    <img src="ratalambiyaposter.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#bijlilastsecond"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Raataan Lambiyan - Shershaah.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+
+<div class="bijlisong"  id="bijliisixth">
+    <img src="https://cdn.statically.io/img/fancyodds.com/wp-content/uploads/2021/08/Mann-Bharryaa-2.0-New-Song.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#sixth"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Man Bharya 2.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+
+<div class="bijlisong"  id="bijliififth">
+    <img src="https://resize.indiatv.in/resize/newbucket/715_-/2021/12/83-1638789153.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#fifth"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Lehra Do Extended - 83.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="bijlisong"  id="bijliifourth">
+    <img src="https://www.lyricsbell.com/wp-content/uploads/2019/01/machayenge-emiway.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#fourth"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Machayenge - Emiway Bantai 128 Kbps.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="bijlisong"  id="bijliithird">
+    <img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2020/10/burjkhalifa-1603005508.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#third"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Dila Du Tenu Dj Remix Song By Dj Deepu PrayagRaj(DjMp3Maza.Com).mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="bijlisong"  id="bijliisecond">
+    <img src="https://c.saavncdn.com/187/Chhalaang-Hindi-2020-20201113151006-500x500.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#second"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Care Ni Karda - Yo Yo Honey Singh.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="bijlisong"  id="bijliifirst">
+    <img src="https://pagalsong.in/uploads//thumbnails/300x300/id3Picture_1508920579.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#first"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Aankh Marey - Simmba 128 Kbps.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+
+<!--LATEST ENGLISH SONG AUDIO
+*******
+******************-->
+
+<div class="alansong"  id="alanfirst">
+    <img src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1617759813/srch_universalmusic_00602438128075-NOQRJ2103010.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#firstt"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Olivia_Rodrigo_-_drivers_license.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="alansong"  id="alansecond">
+    <img src="https://www.lyricsgoal.com/wp-content/uploads/2021/12/itll-be-okay-shawn-mendes.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#secondd"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Gospelful.com-Shawn-Mendes-Itll-Be-Okay-.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="alansong"  id="alanthird">
+    <img src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_believe/music/8030615139002/1637250617/srch_believe_A10320WT041376849L.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#thirdd"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Ed-Sheeran-Bad-Habits-(TrendyBeatz.com).mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="alansong"  id="alanfourth">
+    <img src="https://m.media-amazon.com/images/I/714+OFvXSBL._SS500_.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#fourthh"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Akon-Bananza-Belly-Dancer.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="alansong"  id="alanfivth">
+    <img src="https://wallpapercave.com/wp/wp9581774.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#fivthh"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Save_Your_Tears_1.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="alansong"  id="alansixth">
+    <img src="https://m.media-amazon.com/images/I/818l+XfsfCL._SL1500_.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#sixthh"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="DJ_Snake_ft_Justin_Bieber_-_Let_Me_Love_You_Qoret.com.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="alansong"  id="alanseventh">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBx5MUp-CSm4NLf8UJ08hfIQsrWggGPj6_9A&usqp=CAU"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#seventhh"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="No-Lie(PaglaSongs).mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+<div class="alansong"  id="alaneight">
+    <img src="https://paglasongs.com/uploads/thumb/sft9/4411_4.jpg"
+     height="100px" width="100px">
+   <div id="closeit"> &nbsp; <a href="#eightt"> X</a></div>
+<div id="lastaudio"><audio id="audioo" controls >
+    <source src="Love-Nwantiti(PaglaSongs).mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- ***************************************
+    **************************************
+    ***********************
+Playlist for ALAN walker(present on second number on POPULAR ARTIST CORNER)
+Pls save this below html page with name singleplaylistformajorproject because i have added the link via this name
+    ***********************
+    **************************************
+    ****************************************
+-->
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<head>
+    <title> Alan walker</title>
+    <link rel="stylesheet"
+   href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"
+  >
+</head>
+<style>
+    body{
+        background-color: rgb(36, 14, 77);
+    }
+    
+     #logo_first{
+        display: inline-block;
+           position:absolute;
+          color: aliceblue;
+         left: 3.4rem;
+     }
+     #logo_second{
+        display: inline-block;
+           position:absolute;
+           top:1.5rem;
+           left:3.4rem;
+           color: aliceblue;
+     }
+     #fav{
+         display: inline-block;
+         position: absolute;
+         left:17rem;
+         top:1rem;
+        color: aliceblue;
+        }
+        #search{
+            display: inline-block;
+         position: absolute;
+         left:58rem;
+         color: aliceblue;
+         
+        }
+        input {
+            line-height:17x;
+        }
+       divv{
+        border:2px solid grey;
+    height:1rem;   
+    }
+    #microphone{
+        margin-left:-11px;
+        color: rgb(8, 16, 22);
+    }
+    #bell{
+        display: inline-block;
+         position: absolute;
+         left:74rem;
+         color:aliceblue;
+    }
+    #photo{
+        display: inline-block;
+         position: absolute;
+         left:76rem;
+         top:-1px;
+        
+    }
+    #phot{
+        border-radius:50%;
+    }
+    #fullupperpart_image{
+        height:20rem;
+        width:49rem;
+        background-color: antiquewhite;
+        margin-left: 94px;
+        display: inline-block;
+    }
+    #fullupperpart_text{
+        display: inline-block;
+        position: absolute;
+        /*position: relative;
+        top:-15rem;
+        left: 2rem;*/
+        top:9rem;
+        left:25.7rem;
+        font-size: xx-large;
+    }
+    #infoaboutband{
+        display: inline-block;
+        position: absolute;
+        top:13rem;
+        font-size: large;
+        left:24.6rem;
+    }
+    #infoband{
+        display: inline-block;
+        position: absolute;
+        top:11rem;
+        left:26rem;
+    }
+    #button{
+        display: inline-block;
+        position: absolute;
+        top:21rem;
+        left:28rem;
+        height:1.6rem;
+        width: 5.5rem;
+        background-image: linear-gradient(to right,rgb(66, 66, 214),rgb(231, 140, 231));
+        padding: 6px ;
+        padding-left: 23px;
+        font-size: large;
+        color: aliceblue;
+    }
+    #follo{
+        display: inline-block;
+        position: absolute;
+        top:21.4rem;
+        left:39rem;
+    }
+    .firsts{
+        margin-top: 1rem;
+        height:4rem;
+        width:49rem;
+        background-color: rgb(9, 25, 97);
+        margin-left: 92px;
+    }
+    .number_firstimage{
+        position: relative;
+        top:-1.2rem;
+        left:1rem;
+    color: aliceblue;
+    }
+    .image_photo_01{
+        margin-top: 0.5rem;
+    }
+    .name_of_song_1{
+        position: relative;
+        top:-2rem;
+        color: aliceblue;
+    }
+    .name_of_song_1_down{
+        position: relative;
+        top:0rem;
+        left:6rem;
+    }
+    .dil_01{
+        position: relative;
+        top:-2.4rem;
+        left:2.3rem;
+        color: aliceblue;
+    }
+    .plus_for_first{
+        position: relative;
+        top:-2.4rem;
+        left:4rem;
+        color: aliceblue;
+    }
+    #audio_for_playlist_1{
+        margin-top:-3rem;
+        position: absolute;
+        top:29.8rem;
+        left:18rem;
+      
+        width:28rem;
+        }  
+        #audio_for_playlist_1:hover{
+        box-shadow: 0px 0px 6px 6px rgb(150, 125, 238);
+        }
+    
+        #audio_for_playlist_2{
+        margin-top:-3rem;
+        position: absolute;
+        top:34.8rem;
+        left:18rem;
+      
+        width:28rem;
+        }  
+        #audio_for_playlist_2:hover{
+        box-shadow: 0px 0px 6px 6px rgb(150, 125, 238);
+        }
+        
+        #audio_for_playlist_3{
+        margin-top:-3rem;
+        position: absolute;
+        top:39.8rem;
+        left:18rem;
+      
+        width:28rem;
+        }  
+        #audio_for_playlist_3:hover{
+        box-shadow: 0px 0px 6px 6px rgb(150, 125, 238);
+        }
+
+        #audio_for_playlist_4{
+        margin-top:-3rem;
+        position: absolute;
+        top:44.8rem;
+        left:18rem;
+      
+        width:28rem;
+        }  
+        #audio_for_playlist_4:hover{
+        box-shadow: 0px 0px 6px 6px rgb(150, 125, 238);
+        }
+        #audio_for_playlist_5{
+        margin-top:-3rem;
+        position: absolute;
+        top:49.8rem;
+        left:18rem;
+      
+        width:28rem;
+        }  
+        #audio_for_playlist_5:hover{
+        box-shadow: 0px 0px 6px 6px rgb(150, 125, 238);
+        }
+        #audio_for_playlist_6{
+        margin-top:-3rem;
+        position: absolute;
+        top:54.8rem;
+        left:18rem;
+      
+        width:28rem;
+        }  
+        #audio_for_playlist_6:hover{
+        box-shadow: 0px 0px 6px 6px rgb(150, 125, 238);
+        }
+        #audio_for_playlist_7{
+        margin-top:-3rem;
+        position: absolute;
+        top:59.8rem;
+        left:18rem;
+      
+        width:28rem;
+        }  
+        #audio_for_playlist_7:hover{
+        box-shadow: 0px 0px 6px 6px rgb(150, 125, 238);
+        }
+        #audio_for_playlist_8{
+        margin-top:-3rem;
+        position: absolute;
+        top:64.8rem;
+        left:18rem;
+      
+        width:28rem;
+        }  
+        #audio_for_playlist_8:hover{
+        box-shadow: 0px 0px 6px 6px rgb(150, 125, 238);
+        }
+
+        .diff_songs{
+            margin-top: -9.5rem;
+        }
+        /* For Queue*/
+  #queuecontainer{
+       height:30rem;
+       width:20rem;
+       background-color: rgb(36, 14, 77);
+       overflow: initial;
+       overflow-x: hidden;
+       display: inline-block;
+       margin-top: -21rem;
+       margin-left: 57rem;
+   }
+    #quue{
+        display: inline-block;
+        position:absolute;
+        font-size: xx-large;
+        margin-top:-2rem;
+        top:6.3rem;
+        left:58rem;
+    color: aliceblue;
+    }
+    #imageallfirst{
+     margin-top:37px;
+     margin-left: 1rem;
+    }
+    #imageallsecond{
+     margin-top: -1.2rem;
+     margin-left: 1rem;
+    }
+    #imageallthird{
+     margin-top: -1rem;
+     margin-left: 1rem;
+    }
+    #imageallfourth{
+     margin-top: -1rem;
+     margin-left: 1rem;
+    }
+    #imageallfifth{
+     margin-top: 0rem;
+     margin-left: 1rem;
+    }
+    #imageallsixth{
+     margin-top: -0.2rem;
+     margin-left: 1rem;
+    }
+    #imageallseventh{
+     margin-top: -0.2rem;
+     margin-left: 1rem;
+    }
+
+   
+    .firstnum{
+        position: relative;
+        top:-1rem;
+        color: aliceblue;
+    }
+    .firsttext{
+        position: relative;
+        top:-1.3rem;
+        color: aliceblue;
+    }
+    .hearticon{
+        position: relative;
+        top:-2rem;
+left:7rem;
+color: aliceblue;
+    }
+   /*close Queue*/
+    
+</style>
+<body>
+    <div id="container-logo">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSP68bJZhhkG_UvHtspJ3s5pAdqS6QAwOUgA&usqp=CAU"
+         height="40px" width="40px">
+         <div id="logo_first"> NINJA</div>
+         <div id="logo_second"> STUDIO</div>
+        <div id="fav"> Favourites </div>
+         <div id="search"><divv><i class="fas fa-search"></i></divv><input id="searchbutton" type="text" placeholder="Search" size="25"><i id="microphone" class="fas fa-microphone"></i></div> 
+         <div id="bell"><i class="fas fa-bell"></i></div> 
+         <div id="photo"><img id="phot" src="https://www.imagediamond.com/blog/wp-content/uploads/2020/06/cartoon-boy-images-1.jpg"
+            height="40px" width="40px"></div>  
+    </div>
+
+    <br>
+    <br>
+    <div id="fullupperpart_image">
+<img src="https://iphonewallpaperworld.com/wp-content/uploads/2021/03/Alan-Walker-Wallpapers-June-2021-1.jpg"
+ height="320px" width="290px">
+ <div id="fullupperpart_text"> <strong>ALAN WALKER</strong></div>
+ <div id="infoband">British-Norwegian DJ</div> <br> 
+    <div id="infoaboutband">Alan Olav Walker (born 24 August 1997) is a British-Norwegian DJ,<br> YouTuber and record producer, primarily known for the critically<br> acclaimed single "Faded" (2015),which was certified  platinum<br> in 14 countries. Other songs include "Sing Me to Sleep", "Alone",<br> "Darkside", and "Routine", all of which attracted millions of views</div>
+
+    <div id="button">Play All</div><span id="follo">Follow</span>
+    </div>
+     
+
+<div id="quue">Queue</div>
+<div id="queuecontainer">
+
+
+<div  id="imageallfirst">
+<span class="firstnum">01</span> &nbsp; <img src="https://images.unsplash.com/photo-1576025916944-438d601fc0bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+ height="40px" width="40px">
+ <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+ <span  class="hearticon"><spann id="heart"><i class="far fa-heart"></i></spann></span>
+</div>
+
+
+<br>
+
+
+<div  id="imageallsecond">
+    <span class="firstnum">02</span> &nbsp; <img src="https://images.unsplash.com/photo-1576025916944-438d601fc0bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+     height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong><br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+     <span class="hearticon"><i class="far fa-heart"></i></span>
+    </div>
+
+
+    <br>
+
+
+    <div  id="imageallthird">
+        <span class="firstnum">03</span> &nbsp; <img src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=917&q=80"
+         height="40px" width="40px">
+         <span class="firsttext"><strong>Mirage</strong><br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+         <span class="hearticon"><i class="far fa-heart"></i></span>
+        </div>
+
+
+<br>
+
+
+<div  id="imageallfourth">
+    <span class="firstnum">04</span> &nbsp; <img src="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+     height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+     <span class="hearticon"><i class="far fa-heart"></i></span>
+        </div>
+      
+<div  id="imageallfifth">
+ <span class="firstnum">05</span> &nbsp; <img src="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    height="40px" width="40px">
+  <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+    <span class="hearticon"><i class="far fa-heart"></i></span>
+       </div>
+
+
+
+<div  id="imageallsixth">
+    <span class="firstnum">06</span> &nbsp; <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
+       height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+       <span class="hearticon"><i class="far fa-heart"></i></span>
+          </div>
+   
+
+
+   <div  id="imageallseventh">
+    <span class="firstnum">07</span> &nbsp; <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
+       height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+       <span class="hearticon"><i class="far fa-heart"></i></span>
+          </div>
+ 
+
+
+   <div  id="imageallseventh">
+    <span class="firstnum">08</span> &nbsp; <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
+       height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+       <span class="hearticon"><i class="far fa-heart"></i></span>
+          </div>
+ 
+
+   <div  id="imageallseventh">
+    <span class="firstnum">09</span> &nbsp; <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
+       height="40px" width="40px">
+     <span class="firsttext"><strong>Mirage</strong> <br> &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Else</span>
+       <span class="hearticon"><i class="far fa-heart"></i></span>
+          </div>
+   
+</div>
+
+
+    <div class="diff_songs">
+      <div class="firsts"><span class="number_firstimage"> 01 </span> &emsp; <img class="image_photo_01" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBx5MUp-CSm4NLf8UJ08hfIQsrWggGPj6_9A&usqp=CAU" height="50px" width="50px"><span class="name_of_song_1"><strong> Alone </strong><br> <span class="name_of_song_1_down">else</span></span>  <audio id="audio_for_playlist_1" controls><source src="Alan_Walker_-_Alone_Olagist.co_.mp3"></audio>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i  class="far fa-heart  dil_01"></i> <i class="fas fa-plus plus_for_first"></i></div>
+     
+      <div class="firsts"><span class="number_firstimage"> 02 </span> &emsp; <img class="image_photo_01" src="https://upload.wikimedia.org/wikipedia/en/c/c3/Alan_Walker_The_Spectre.jpg" height="50px" width="50px"><span class="name_of_song_1"><strong> Spectre </strong><br> <span class="name_of_song_1_down">else</span></span>  <audio id="audio_for_playlist_2" controls><source src="Alan_Walker_-_The_Spectre_Olagist.co_.mp3"></audio>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i  class="far fa-heart  dil_01"></i> <i class="fas fa-plus plus_for_first"></i></div>
+      <div class="firsts"><span class="number_firstimage"> 03 </span> &emsp; <img class="image_photo_01" src="https://lyricard.in/wp-content/uploads/2021/08/sing-me.png" height="50px" width="50px"><span class="name_of_song_1"><strong> Sing me sleep </strong><br> <span class="name_of_song_1_down">else</span></span>   <audio id="audio_for_playlist_3" controls><source src="Alan_Walker_-_Sing_Me_To_Sleep_Olagist.co_.mp3"></audio> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i  class="far fa-heart  dil_01"></i> <i class="fas fa-plus plus_for_first"></i></div>
+      <div class="firsts"><span class="number_firstimage"> 04 </span> &emsp; <img class="image_photo_01" src="https://nomorsiapa.com/images/down/f4.bcbits.com/img/a3972064715_5.jpg" height="50px" width="50px"><span class="name_of_song_1"><strong> Faded </strong><br> <span class="name_of_song_1_down">else</span></span>  <audio id="audio_for_playlist_4" controls><source src="Alan_Walker_-_Faded_Olagist.co_.mp3"></audio> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i  class="far fa-heart  dil_01"></i> <i class="fas fa-plus plus_for_first"></i></div>
+      <div class="firsts"><span class="number_firstimage"> 05 </span> &emsp; <img class="image_photo_01" src="https://w0.peakpx.com/wallpaper/561/361/HD-wallpaper-on-my-way-alan-walker-game-kgf-mobile-pubg-song.jpg" height="50px" width="50px"><span class="name_of_song_1"><strong> On my way</strong><br> <span class="name_of_song_1_down">else</span></span> <audio id="audio_for_playlist_5" controls><source src="On My Way.mp3"></audio>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i  class="far fa-heart  dil_01"></i> <i class="fas fa-plus plus_for_first"></i></div>
+      <div class="firsts"><span class="number_firstimage"> 06 </span> &emsp; <img class="image_photo_01" src="https://scontent.fixc8-1.fna.fbcdn.net/v/t1.6435-9/37881988_1974891602574922_3430765287010467840_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=1erdWGXLYhMAX9G-ZIw&_nc_ht=scontent.fixc8-1.fna&oh=00_AT92JyPS5RQWYwLE9ZyS5RigFHIzoZ_1FjEyx3b4u6I7Yg&oe=61FC761A" height="50px" width="50px"><span class="name_of_song_1"><strong> Darkside </strong><br> <span class="name_of_song_1_down">else</span></span><audio id="audio_for_playlist_6" controls><source src="Darkside.mp3"></audio>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i  class="far fa-heart  dil_01"></i> <i class="fas fa-plus plus_for_first"></i></div>
+      <div class="firsts"><span class="number_firstimage"> 07 </span> &emsp; <img class="image_photo_01" src="https://paglasongs.com/uploads/thumb/sft8/3747_4.jpg" height="50px" width="50px"><span class="name_of_song_1"><strong> Paradise </strong><br> <span class="name_of_song_1_down">else</span></span><audio id="audio_for_playlist_7" controls><source src="Paradise(PagalWorld).mp3"></audio>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i  class="far fa-heart  dil_01"></i> <i class="fas fa-plus plus_for_first"></i></div>
+      <div class="firsts"><span class="number_firstimage">08 </span> &emsp;<img class="image_photo_01" src="https://1.bp.blogspot.com/-E519BUmwTZY/YIJxigH6o8I/AAAAAAAAAI4/cxP_YFclC9YbLWIzhNMb-k3wrEbZcrL7QCLcBGAsYHQ/s1280/End-of-Time-Lyrics-K-391-Alan-Walker-%2526-Ahrix.webp" height="50px" width="50px"><span class="name_of_song_1"><strong> End of time</strong><br> <span class="name_of_song_1_down">else</span></span> <audio id="audio_for_playlist_8" controls><source src="End of Time.mp3"></audio> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <i  class="far fa-heart  dil_01"></i> <i class="fas fa-plus plus_for_first"></i></div>
+     
+    </div>
+    
+</body>
+</html>
+-->
